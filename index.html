@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사내 카페 예약 서비스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">☕ 사내 카페</div>
+            <ul class="nav-links">
+                <li><a href="#about">카페 소개</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#reservation">예약하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>편안한 휴식 공간</h1>
+            <p>업무 중 잠깐의 여유를 즐겨보세요</p>
+            <a href="#reservation" class="btn-primary">예약하기</a>
+        </div>
+    </section>
+
+    <!-- 카페 소개 섹션 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">카페 소개</h2>
+
+            <div class="about-grid">
+                <!-- 카페 이미지 -->
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>☕</span>
+                        <p>카페 이미지</p>
+                    </div>
+                </div>
+
+                <!-- 카페 정보 -->
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>📍 위치</h3>
+                        <p>본사 1층 로비 옆</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕐 운영 시간</h3>
+                        <p>평일: 08:00 - 18:00</p>
+                        <p>주말 및 공휴일: 휴무</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📞 문의</h3>
+                        <p>내선번호: 1234</p>
+                        <p>이메일: cafe@company.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 섹션 -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">메뉴</h2>
+
+            <div class="menu-categories">
+                <!-- 음료 -->
+                <div class="menu-category">
+                    <h3>🥤 음료</h3>
+                    <ul class="menu-list">
+                        <li><span>아메리카노</span><span>무료</span></li>
+                        <li><span>카페라떼</span><span>무료</span></li>
+                        <li><span>바닐라라떼</span><span>무료</span></li>
+                        <li><span>카푸치노</span><span>무료</span></li>
+                        <li><span>녹차</span><span>무료</span></li>
+                        <li><span>유자차</span><span>무료</span></li>
+                    </ul>
+                </div>
+
+                <!-- 간식 -->
+                <div class="menu-category">
+                    <h3>🍪 간식</h3>
+                    <ul class="menu-list">
+                        <li><span>쿠키</span><span>무료</span></li>
+                        <li><span>머핀</span><span>무료</span></li>
+                        <li><span>크로와상</span><span>무료</span></li>
+                        <li><span>샌드위치</span><span>무료</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 예약 섹션 -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">예약하기</h2>
+            <p class="section-subtitle">좌석을 미리 예약하고 편하게 이용하세요</p>
+
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required placeholder="홍길동">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">부서 *</label>
+                        <input type="text" id="department" name="department" required placeholder="개발팀">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">예약 날짜 *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">예약 시간 *</label>
+                        <select id="time" name="time" required>
+                            <option value="">시간을 선택하세요</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">인원 수 *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">인원을 선택하세요</option>
+                        <option value="1">1명</option>
+                        <option value="2">2명</option>
+                        <option value="3">3명</option>
+                        <option value="4">4명</option>
+                        <option value="5">5명 이상</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">요청 사항</label>
+                    <textarea id="message" name="message" rows="3" placeholder="특별한 요청 사항이 있으면 입력해주세요"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">예약 신청</button>
+            </form>
+
+            <!-- 예약 결과 메시지 -->
+            <div id="resultMessage" class="result-message"></div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 사내 카페. All rights reserved.</p>
+            <p>문의: cafe@company.com | 내선: 1234</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
